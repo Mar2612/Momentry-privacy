@@ -1,100 +1,242 @@
-Privacy Policy – Momentry
-Last updated: August 30, 2025
-Version: 1.1
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – Momentry</title>
+  <meta name="description" content="Privacy Policy for the Momentry app." />
+  <style>
+    :root {
+      --bg: #0b0c0f;
+      --panel: #11131a;
+      --text: #e7e9ee;
+      --muted: #b6bdc7;
+      --accent: #7aa2ff;
+      --border: #202431;
+      --ok: #35d07f;
+      --warn: #ffd166;
+      --danger: #ff6b6b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f8fb;
+        --panel: #ffffff;
+        --text: #1c1f26;
+        --muted: #4b5563;
+        --accent: #335cff;
+        --border: #e7eaf1;
+      }
+    }
 
-About Momentry
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    header {
+      background: linear-gradient(135deg, rgba(122,162,255,.2), rgba(122,162,255,0));
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner { max-width: 880px; margin: 0 auto; padding: 32px 20px; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 40px);
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 16px 0 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+    h2 {
+      margin: 0 0 8px;
+      font-size: clamp(20px, 3vw, 26px);
+    }
+    h3 { margin: 18px 0 6px; font-size: 18px; }
+    p { margin: 10px 0; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin: 6px 0; }
+    .pill {
+      display: inline-block;
+      padding: 2px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(122,162,255,.08);
+      color: var(--accent);
+      font-size: 12px;
+      vertical-align: middle;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 680px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    a { color: var(--accent); }
+    .note {
+      padding: 12px 14px;
+      background: rgba(53, 208, 127, .08);
+      border: 1px solid rgba(53, 208, 127, .25);
+      border-radius: 12px;
+      font-size: 14px;
+      color: var(--text);
+    }
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+      padding: 24px 0 64px;
+    }
+    /* Print */
+    @media print {
+      body { background: white; color: black; }
+      header, .note, .pill, footer { display: none; }
+      section { border: 0; box-shadow: none; padding: 0; }
+      .container { max-width: none; padding: 0; }
+      a { color: black; text-decoration: underline; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Privacy Policy – Momentry</h1>
+      <div class="meta">Last updated: <time datetime="2025-08-30">August 30, 2025</time> · Version 1.1</div>
+    </div>
+  </header>
 
-Momentry is an app that helps users capture daily memories by combining photos with personal text. This app is developed by Marou.
+  <main class="container" role="main">
+    <section aria-labelledby="about">
+      <h2 id="about">About Momentry</h2>
+      <p>Momentry is an app that helps users capture daily memories by combining photos with personal text. This app is developed by Marou.</p>
+    </section>
 
-Information Collection and Use
-Data you enter yourself
+    <section aria-labelledby="info">
+      <h2 id="info">Information Collection and Use</h2>
+      <div class="grid">
+        <div>
+          <h3>Data you enter yourself</h3>
+          <ul>
+            <li><strong>Text memories</strong> – the sentences you write with your photos</li>
+            <li><strong>Photos</strong> – images you take or select from your gallery</li>
+            <li><strong>Categories</strong> – tags you add to your memories</li>
+          </ul>
+        </div>
+        <div>
+          <h3>App usage data</h3>
+          <ul>
+            <li><strong>Settings</strong> – your preferences for notifications, dark mode, etc.</li>
+            <li><strong>App activity</strong> – when and how you use the app</li>
+          </ul>
+        </div>
+      </div>
 
-Text memories – the sentences you write with your photos
+      <h3>Contacts data</h3>
+      <ul>
+        <li><strong>Contacts (names, phone numbers)</strong> – only accessed if you give explicit permission</li>
+        <li><strong>Purpose:</strong> to allow future features such as sharing or linking memories with selected contacts</li>
+        <li><strong>Storage:</strong> securely stored in the app’s local database and processed only for app functionality</li>
+        <li><strong>Consent:</strong> no access without your permission</li>
+      </ul>
+    </section>
 
-Photos – images you take or select from your gallery
+    <section aria-labelledby="perms">
+      <h2 id="perms">Permissions Used</h2>
 
-Categories – tags you add to your memories
+      <h3>Camera <span class="pill">android.permission.CAMERA</span></h3>
+      <p><strong>Purpose:</strong> Take photos for your daily memories<br/>
+         <strong>Usage:</strong> Only when you press the camera button</p>
 
-App usage data
+      <h3>Photos and media <span class="pill">READ_MEDIA_IMAGES, READ_EXTERNAL_STORAGE</span></h3>
+      <p><strong>Purpose:</strong> Select photos from your gallery<br/>
+         <strong>Usage:</strong> Only when you choose a photo</p>
 
-Settings – your preferences for notifications, dark mode, etc.
+      <h3>Contacts <span class="pill">READ_CONTACTS</span></h3>
+      <p><strong>Purpose:</strong> To link or share memories with your contacts (only if enabled by you)<br/>
+         <strong>Usage:</strong> Data is stored locally in the app; we never access contacts without your explicit permission</p>
 
-App activity – when and how you use the app
+      <h3>Notifications <span class="pill">POST_NOTIFICATIONS</span></h3>
+      <p><strong>Purpose:</strong> Daily reminders to use the app<br/>
+         <strong>Usage:</strong> Only if you enable this in settings</p>
 
-Contacts data
+      <h3>Exact alarms <span class="pill">SCHEDULE_EXACT_ALARM</span></h3>
+      <p><strong>Purpose:</strong> To send reminders at the exact time you set</p>
+    </section>
 
-Contacts (names, phone numbers) – only accessed if you give explicit permission
+    <section aria-labelledby="storage">
+      <h2 id="storage">Data Storage and Security</h2>
+      <ul>
+        <li>All data (photos, text, contacts, settings) is stored locally on your device.</li>
+        <li>We do not upload any personal data to external servers.</li>
+        <li>Your exported data is saved only where you choose to store it.</li>
+        <li>Access to contacts and photos is only given when you allow it.</li>
+      </ul>
+    </section>
 
-Purpose: to allow future features such as sharing or linking memories with selected contacts
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">Data Sharing</h2>
+      <p><strong>We do NOT share</strong>: your photos, text, contacts, or settings with any third parties.</p>
+      <p><strong>We only use</strong>: your contacts for in-app functionality, and only if you explicitly agree.</p>
+    </section>
 
-Storage: securely stored in the app’s local database and processed only for app functionality
+    <section aria-labelledby="export">
+      <h2 id="export">Data Export</h2>
+      <ul>
+        <li>You can export your data anytime via the app’s settings.</li>
+        <li>The export creates a ZIP file with your memories, photos, and related metadata.</li>
+        <li>You decide where this file is saved.</li>
+      </ul>
+    </section>
 
-No access without consent
+    <section aria-labelledby="rights">
+      <h2 id="rights">Your Rights</h2>
+      <ul>
+        <li>Access all your stored data</li>
+        <li>Export your data whenever you want</li>
+        <li>Delete the app and erase all data</li>
+        <li>Revoke permissions via your device settings</li>
+      </ul>
+    </section>
 
-Permissions Used
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>For questions about this privacy policy:</p>
+      <ul>
+        <li>📧 Email: <a href="mailto:appsmazing2612@gmail.com">appsmazing2612@gmail.com</a></li>
+        <li>📱 App: via the settings in Momentry</li>
+      </ul>
+    </section>
 
-Camera (android.permission.CAMERA)
-Purpose: Take photos for your daily memories
-Usage: Only when you press the camera button
+    <section aria-labelledby="changes">
+      <h2 id="changes">Changes</h2>
+      <p>We may update this privacy policy. Important changes will be announced via the app.</p>
+      <p class="note">Tip: You can print or save this page as PDF for your records.</p>
+    </section>
+  </main>
 
-Photos and media (READ_MEDIA_IMAGES, READ_EXTERNAL_STORAGE)
-Purpose: Select photos from your gallery
-Usage: Only when you choose a photo
+  <footer>
+    © <span id="y"></span> Momentry. All rights reserved.
+  </footer>
 
-Contacts (READ_CONTACTS)
-Purpose: To link or share memories with your contacts (only if enabled by you)
-Usage: Data is stored locally in the app; we never access contacts without your explicit permission
-
-Notifications (POST_NOTIFICATIONS)
-Purpose: Daily reminders to use the app
-Usage: Only if you enable this in settings
-
-Exact alarms (SCHEDULE_EXACT_ALARM)
-Purpose: To send reminders at the exact time you set
-
-Data Storage and Security
-
-All data (photos, text, contacts, settings) is stored locally on your device.
-
-We do not upload any personal data to external servers.
-
-Your exported data is saved only where you choose to store it.
-
-Access to contacts and photos is only given when you allow it.
-
-Data Sharing
-
-We do NOT share: your photos, text, contacts, or settings with any third parties.
-
-We only use: your contacts for in-app functionality, and only if you explicitly agree.
-
-Data Export
-
-You can export your data anytime via the app’s settings.
-
-The export creates a ZIP file with your memories, photos, and related metadata.
-
-You decide where this file is saved.
-
-Your Rights
-
-You have the right to:
-
-Access all your stored data
-
-Export your data whenever you want
-
-Delete the app and erase all data
-
-Revoke permissions via your device settings
-
-Contact
-
-For questions about this privacy policy:
-📧 Email: appsmazing2612@gmail.com
-
-📱 App: via the settings in Momentry
-
-Changes
-
-We may update this privacy policy. Important changes will be announced via the app.
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
